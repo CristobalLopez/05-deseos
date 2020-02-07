@@ -50,5 +50,13 @@ export class DeseosService {
 
  }
 
+ borrarLista(list: Lista){
+
+  this.listas = this.listas.filter(listaData => listaData.id !== list.id);
+  this.guardarStorage();
+ }
+
+ 
+
 
 }
